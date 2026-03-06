@@ -1,0 +1,126 @@
+.contact-section {
+  padding: 60px 10%;
+  background-color: #f8f8f8;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 32px;
+  /* margin-bottom: 40px; */
+  color: #222;
+  font-family: Playfair Display;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-section p {
+  text-align: center;
+  font-size: 32px;
+  /* margin-bottom: 40px; */
+  color: #222;
+}
+
+/* Container for all contact items */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Single contact item */
+.contact-item {
+  background: white;
+  padding: 20px 15px;
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+}
+
+.contact-icon {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.contact-item h4 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  word-wrap: break-word;
+}
+
+/* ===================== */
+/* RESPONSIVE DESIGN */
+/* ===================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+.contact-section h2{
+font-size:28px;
+}
+
+.contact-section p{
+font-size:18px;
+}
+
+.contact-item{
+width:140px;
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.contact-section{
+padding:40px 5%;
+}
+
+.contact-section h2{
+font-size:24px;
+}
+
+.contact-section p{
+font-size:16px;
+}
+
+.contact-container{
+gap:20px;
+}
+
+.contact-item{
+width:45%;
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.contact-item{
+width:100%;
+}
+
+.contact-section h2{
+font-size:22px;
+}
+
+.contact-section p{
+font-size:15px;
+}
+
+}
